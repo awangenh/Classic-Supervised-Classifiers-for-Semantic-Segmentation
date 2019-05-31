@@ -7,7 +7,7 @@
 
 #include <boost/program_options.hpp>
 
-#include "pixClassifiers/weedMapper.hpp"
+#include "pixClassifiers/imageSemanticSegmenter.hpp"
 #include "pixClassifiers/pixelKNNClassifier.hpp"
 #include "pixClassifiers/pixelSVMClassifier.hpp"
 #include "pixClassifiers/pixelMahalanobisClassifier.hpp"
@@ -78,7 +78,7 @@ int glcmMean = 0;
 int glcmStdDev = 0;
 int glcmCorrelation = 0;
 
-ImageMapper* mapper;
+ImageSemanticSegmenter* mapper;
 PixelClassifier* pixClassifier;
 ImageFeatures* features;
 
@@ -106,7 +106,7 @@ int main(int argc, char** argv){
     PRINT_DEBUG("Start Training!");
     pixClassifier->train();
     PRINT_DEBUG("Finished Training!");
-    mapper = new ImageMapper(pixClassifier);
+    mapper = new ImageSemanticSegmenter(pixClassifier);
 
     system("echo start >> date.txt && date >> date.txt");
 
@@ -126,7 +126,7 @@ int main(int argc, char** argv){
 //        PRINT_DEBUG("Input image size = %dx%d", inImage.cols, inImage.rows);
 //        PRINT_DEBUG("Input image channels and depth = %d - %d", inImage.channels(), inImage.depth());
 
-        mapper->doMapping(inImage, labelImage);
+        mapper->doSegmentation(inImage, labelImage);
         labelImage.convertTo(colorLabelImage, CV_8UC1);
         cvtColor(colorLabelImage, colorLabelImage, COLOR_GRAY2BGR);
         for(int i = 0; i < inImage.rows; i++){

@@ -1,4 +1,4 @@
-#include "imageMapper.hpp"
+#include "imageSemanticSegmenter.hpp"
 
 #include <omp.h>
 #include <ctime>
@@ -13,18 +13,18 @@
 using namespace std;
 using namespace cv;
 
-ImageMapper::ImageMapper(PixelClassifier* classifier)
+ImageSemanticSegmenter::ImageSemanticSegmenter(PixelClassifier* classifier)
     : classifier(classifier)
 {
 
 }
 
-ImageMapper::~ImageMapper()
+ImageSemanticSegmenter::~ImageSemanticSegmenter()
 {
     delete classifier;
 }
 
-void ImageMapper::doMapping(Mat& inImage, Mat& outMap)
+void ImageSemanticSegmenter::doSegmentation(Mat& inImage, Mat& outMap)
 {
     assert(inImage.data);
     assert(inImage.type() == CV_8UC3);

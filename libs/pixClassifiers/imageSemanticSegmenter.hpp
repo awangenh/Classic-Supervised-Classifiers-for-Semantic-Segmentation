@@ -11,12 +11,12 @@
 using namespace std;
 using namespace cv;
 
-class ImageMapper{
+class ImageSemanticSegmenter{
 public:
-    ImageMapper(PixelClassifier* classifier);//takes the ownership
-    virtual ~ImageMapper();
+    ImageSemanticSegmenter(PixelClassifier* classifier);//takes the ownership
+    virtual ~ImageSemanticSegmenter();
 
-    virtual void doMapping(Mat& inImage, Mat& outMap);
+    virtual void doSegmentation(Mat& inImage, Mat& outMap);
 
 protected:
     PixelClassifier* classifier;

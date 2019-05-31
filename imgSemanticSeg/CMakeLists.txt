@@ -7,7 +7,7 @@ add_executable (imgSeg imgSeg.cpp)
 target_link_libraries (imgSeg Util_LIBS)
 target_link_libraries (imgSeg ${OpenCV_LIBS})
 target_link_libraries (imgSeg ${Boost_LIBRARIES})
-target_link_libraries (imgSeg Mapping_LIBS)
+target_link_libraries (imgSeg PixClassifiers_LIBS)
 target_link_libraries (imgSeg ImageFeatures_LIBS)
 target_link_libraries (imgSeg stdc++fs)
 

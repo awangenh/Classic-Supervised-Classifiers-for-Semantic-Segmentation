@@ -7,7 +7,7 @@ add_executable (decisionBoundaries decisionBoundaries.cpp)
 target_link_libraries (decisionBoundaries Util_LIBS)
 target_link_libraries (decisionBoundaries ${OpenCV_LIBS})
 target_link_libraries (decisionBoundaries ${Boost_LIBRARIES})
-target_link_libraries (decisionBoundaries Mapping_LIBS)
+target_link_libraries (decisionBoundaries PixClassifiers_LIBS)
 target_link_libraries (decisionBoundaries ImageFeatures_LIBS)
 target_link_libraries (decisionBoundaries stdc++fs)
 
