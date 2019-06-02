@@ -1,0 +1,19 @@
+%YAML:1.0
+useRGB: 1
+useEXG: 0 
+useEXR: 0
+useEXGEXR: 0
+useGaborFilter: 0 
+useGLCM: 1
+
+
+glcmWindowSize: 51
+glcmContrast: 1
+glcmDissimilarity: 1
+glcmHomogeneity: 1
+glcmEnergy: 1
+glcmEntropy: 1
+glcmMean: 1
+glcmStdDev: 1
+glcmCorrelation: 1
+
