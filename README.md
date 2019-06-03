@@ -13,11 +13,11 @@ With this tool you can segment a list of images, specifying the wanted classifie
 
 The images belo show an example of color-texture image segmentation employing gabor filters and several different classifiers.
 
-The first image shows the original image and the manually selected classes, shown as pixels selected via a paint tool.
+The first image presents the original image and the manually selected class examples (hence supervised segmentation), shown as pixels selected with a paint tool:
 
 ![inputs](https://user-images.githubusercontent.com/8596365/58821575-c89ceb00-860b-11e9-869d-469fd4aac0b6.png)
 
-The second image shows the results with different classifiers.
+The second image shows the results with different classifiers (the columns) and different texture descriptors (the rows):
 
 ![results](https://user-images.githubusercontent.com/8596365/58821615-d7839d80-860b-11e9-8804-c6ac874da926.png)
 
