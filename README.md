@@ -21,6 +21,8 @@ The second image shows the results with different classifiers (the columns) and 
 
 ![results](https://user-images.githubusercontent.com/8596365/58821615-d7839d80-860b-11e9-8804-c6ac874da926.png)
 
+These 10 combinations of texure descritptors and classifiers are available in the code of this git.
+
 ## precisionCal
 
 This tool computes, for a list of results and their respective ground truths, two precision measures (F1 score and Jaccard index), and saves this data in a yml file.
