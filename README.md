@@ -1,8 +1,5 @@
 # Classic-Supervised-Classifiers-for-Semantic-Segmentation
 
-
-# Classic-Supervised-Classifiers-for-Semantic-Segmentation
-
 # Publications
 
 This repository contains the software used for the experiments published in this paper.
