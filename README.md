@@ -9,9 +9,16 @@ There are three executable tools in this repository: imgSeg, precisionCal, and d
 
 ## imgSeg
 
-With this tool you can segment a list of images, specifying the wanted classifier, feature vector, and train data. There are some example yml files that can be used to configure the tool. The next images shows an example of color texture image being segmented with several classifiers with two diferent image features.
+With this tool you can segment a list of images, specifying the wanted classifier, feature vector, and train data. There are some example yml files that can be used to configure the tool. 
+
+The images belo show an example of color-texture image segmentation employing gabor filters and several different classifiers.
+
+The first image shows the original image and the manually selected classes, shown as pixels selected via a paint tool.
 
 ![inputs](https://user-images.githubusercontent.com/8596365/58821575-c89ceb00-860b-11e9-869d-469fd4aac0b6.png)
+
+The second image shows the results with different classifiers.
+
 ![results](https://user-images.githubusercontent.com/8596365/58821615-d7839d80-860b-11e9-8804-c6ac874da926.png)
 
 ## precisionCal
