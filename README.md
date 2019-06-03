@@ -1,7 +1,5 @@
 # Classic-Supervised-Classifiers-for-Semantic-Segmentation
 
-# Publications
-
 This repository contains the software used for the experiments published in this paper.
 This software was build aiming the utilization and comparison of classical machine learning supervised classifiers in the semantic segmentation of agricultural aerial images. The code was written in c++ utilizing the OpenCV library.
 
